@@ -15,10 +15,9 @@ Put the tracking datasets in ./data. It should look like:
         --  AerialMind
             |-- Attribute
             |-- image_02
-            			     -- Visdrone
-            			     -- UAVDT
+                 -- Visdrone
+                 -- UAVDT
             |-- labels_with_ids
- 
    ```
 
 ## Installation
