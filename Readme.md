@@ -19,6 +19,9 @@ Referring Multi-Object Tracking (RMOT) aims to achieve precise target detection 
 | AerialMind     | Ours         | **93** | ✓    | ✓     | ✓     | **24.6K**   | **1.2K** | 11.9              | **293.1K** | **46.14M** |
 
 <div align=center><img src="Figs/dataset_analysis.png"/></div>
+
+
+
 # Method
 <div align=center><img src="Figs/annotation.png"/></div>
 Overview of the four-stage annotation process in the COALA framework. This framework efficiently constructs the AerialMind dataset through multi-agent collaboration and human-computer interaction.
