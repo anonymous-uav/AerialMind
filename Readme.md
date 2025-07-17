@@ -15,6 +15,7 @@ Overview of the HawkEyeTrack.
 # Results
 ## Visualization
 <div align=center><img src="Figs/vis.png"/></div>
+
 # Getting started
 ## Data Preparation
 Put the tracking datasets in ./data. It should look like:
