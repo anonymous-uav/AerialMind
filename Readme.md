@@ -5,8 +5,20 @@ This official repository of the paper [AerialMind: Towards Referring Multi-Objec
 
 # Abstract
 Referring Multi-Object Tracking (RMOT) aims to achieve precise target detection and tracking through natural language instructions. While existing RMOT methods have demonstrated promising results in ground-level scenarios, they fundamentally lack the capability to address the unique challenges inherent in aerial perspectives. The dramatic scale variations, complex spatial relationships, and dynamic viewpoint changes in it lead to the limited generalization ability of these methods in real-world applications. Consequently, we introduce AerialMind, the first large-scale RMOT benchmark in Unmanned Aerial Vehicle (UAV) scenarios, which aims to bridge this research gap.  To facilitate its construction, we developed COALA, a novel semi-automated collaborative agent-based labeling assistant framework that significantly reduces labor costs while maintaining annotation quality. Furthermore, we propose HawkEyeTrack (HETrack), a novel tracking method that synergistically vision-language representation learning and enhances the perception of small-scale objects. Comprehensive experiments validated the challenge of our dataset and the effectiveness of our method. The dataset and code will be publicly at here.
-<div align=center><img src="Figs/dataset_analysis.png"/></div>
 
+# Dataset Features and Statistics
+| Dataset        | Source       | Videos | Dom. | Reas. | Attr. | Expressions | Words | Instance / Expression | Instance | Annobbox  |
+|----------------|--------------|--------|------|-------|-------|-------------|-------|-----------------------|----------|-----------|
+| Refer-KITTI    | CVPR2023     | 18     | ✗    | ✗     | ✗     | 818         | 49    | 10.7                  | 8.8K     | 0.36M     |
+| Refer-Dance    | CVPR2024     | 65     | ✗    | ✗     | ✗     | 1.9K        | 25    | 0.33                  | 650      | 0.55M     |
+| Refer-KITTI-V2 | arXiv2024    | 21     | ✗    | ✗     | ✗     | 9.8K        | 617   | 6.7                   | 65.4K    | 3.06M     |
+| Refer-UE-City  | arXiv2024    | 12     | ✗    | ✗     | ✗     | 714         | --    | 10.3                  | --       | 0.55M     |
+| Refer-BDD      | IEEE TIM2025 | 50     | ✗    | ✗     | ✗     | 4.6K        | 225   | 14.1                  | 70.4K    | 1.50M     |
+| CRTrack        | AAAI2025     | 41     | ✓    | ✗     | ✗     | 344         | 43    | --                    | --       | --        |
+| LaMOT*         | IEEE ICRA2025| 62     | ✗    | ✗     | ✗     | 145         | 9     | **54.6**              | 508      | 1.2M      |
+| AerialMind     | Ours         | **93** | ✓    | ✓     | ✓     | **24.6K**   | **1.2K** | 11.9              | **293.1K** | **46.14M** |
+
+<div align=center><img src="Figs/dataset_analysis.png"/></div>
 # Method
 <div align=center><img src="Figs/annotation.png"/></div>
 Overview of the four-stage annotation process in the COALA framework. This framework efficiently constructs the AerialMind dataset through multi-agent collaboration and human-computer interaction.
